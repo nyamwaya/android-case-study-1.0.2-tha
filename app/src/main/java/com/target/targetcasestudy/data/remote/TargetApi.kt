@@ -11,7 +11,7 @@ interface TargetApi {
 
     @GET("deals/{id}")
     suspend fun getSingleDeal(
-        @Path("id") id: String
+        @Path("dealId") id: String
     ) : Product
 
 }

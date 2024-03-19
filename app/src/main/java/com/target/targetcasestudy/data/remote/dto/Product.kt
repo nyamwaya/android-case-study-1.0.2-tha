@@ -1,9 +1,13 @@
 package com.target.targetcasestudy.data.remote.dto
 
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 import com.target.targetcasestudy.api.Price
 
+@JsonClass(generateAdapter = true)
 data class Product (
-    val id: Int,
+    @Json(name = "id")
+    val dealId: Int,
     val title: String,
     val aisle: String,
     val description: String,
