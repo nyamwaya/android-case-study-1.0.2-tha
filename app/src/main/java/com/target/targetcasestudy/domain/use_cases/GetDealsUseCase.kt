@@ -1,7 +1,7 @@
 package com.target.targetcasestudy.domain.use_cases
 
 import com.target.targetcasestudy.common.Resource
-import com.target.targetcasestudy.data.remote.dto.DealsResponse
+import com.target.targetcasestudy.data.remote.dto.GetDealsResponse
 import com.target.targetcasestudy.domain.DealsRepository
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
@@ -12,7 +12,7 @@ class GetDealsUseCase @Inject constructor(
     private val repository: DealsRepository
 ) {
     // remove hard coded strings, design better error handling
-    operator fun invoke(): kotlinx.coroutines.flow.Flow<Resource<DealsResponse>> =
+    operator fun invoke(): kotlinx.coroutines.flow.Flow<Resource<GetDealsResponse>> =
         flow {
             try {
                 emit(Resource.Loading())

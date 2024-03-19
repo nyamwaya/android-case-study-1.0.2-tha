@@ -1,5 +1,5 @@
 package com.target.targetcasestudy.data.remote.dto
 
-data class DealsResponse(
+data class GetDealsResponse(
     val products: List<Product>
 )
