@@ -1,4 +1,6 @@
-package com.target.targetcasestudy.api
+package com.target.targetcasestudy.data.remote.dto
+
+import com.target.targetcasestudy.api.Price
 
 data class Deal(
   val id: String,
